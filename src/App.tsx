@@ -5,15 +5,17 @@ import MainPage from './pages/mainPage';
 import DomainsList from './pages/domains/domainList';
 import DomainDetail from './pages/domains/detail';
 import MyPage from './pages/profile/myPage';
+import TopBar from './pages/topbar';
 
 function App() {
 
   return (
-    <div>
+    <div className='pt-14'>
+      <TopBar/>
       <Routes>
          {/** YourD Name Service 설명 페이지 일단 생략 */}
         <Route path='/' element={<MainPage/>}/>
-        
+
         {/** Domain 검색 페이지  */}
         <Route path='/search' element={<SearchPage/>}/>
 
