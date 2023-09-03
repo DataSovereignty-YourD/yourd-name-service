@@ -54,6 +54,7 @@ export default function MyPage() {
           {" "}
           도메인 리스트를 불러오지 못했습니다.
         </div>
+        <div>수정</div>
       </div>
     </div>
   );
