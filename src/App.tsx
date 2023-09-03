@@ -10,7 +10,7 @@ import TopBar from './pages/topbar';
 function App() {
 
   return (
-    <div className='pt-14'>
+    <div className='pt-16'>
       <TopBar/>
       <Routes>
          {/** YourD Name Service 설명 페이지 일단 생략 */}
