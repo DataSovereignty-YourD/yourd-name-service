@@ -1,9 +1,15 @@
+import { Link } from 'react-router-dom';
 import Logo from '../assets/img/yourd-logo.png';
 
 export default function TopBar() {
     return (
-        <div className="fixed h-14 bg-white top-0">
+        <div className="fixed flex h-14 w-full bg-white top-0 justify-between px-10">
             <img src={Logo} className="h-full object-contain "/>
+
+            <div className='flex gap-6 items-center '>
+                <Link to={'/domains'}>Domain</Link>
+                <Link to={'/mypage'}>My Page</Link>
+            </div>
         </div>
     )
 }
