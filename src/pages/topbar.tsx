@@ -9,6 +9,7 @@ export default function TopBar() {
             <div className='flex gap-6 items-center '>
                 <Link to={'/domains'}>Domain</Link>
                 <Link to={'/mypage'}>My Page</Link>
+                <button className='py-2 px-4 bg-white drop-shadow-md rounded-sm'>Connet Wallet</button>
             </div>
         </div>
     )
