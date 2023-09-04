@@ -1,4 +1,4 @@
-import Klay from "../../assets/img/fuckyou-klay.png";
+import Klay from "../../assets/dapplogo/klayswap.png";
 import { BsList } from "react-icons/bs";
 import { IoAppsSharp } from "react-icons/io5";
 
