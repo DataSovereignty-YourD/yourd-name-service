@@ -67,7 +67,7 @@ export default function DomainsList() {
   ];
 
   return (
-    <div className="   items-center justify-center mx-4 mb-80 lg:mx-56 sm:min-w-max">
+    <div className="   items-center justify-center mx-4 mb-80 lg:mx-20 sm:min-w-max">
       <div className="   justify-between flex items-center my-6 mx-2 sm:my-12">
         <div className="   text-[28px] gap-2 items-center ">
           <div className=" flex">

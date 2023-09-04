@@ -4,7 +4,7 @@ import { BiSearchAlt2 } from "react-icons/bi";
 export default function SearchPage() {
   const [searchValue, setSearchValue] = useState("");
   return (
-    <div className="flex w-full mb-96 mt-32  justify-center ">
+    <div className="flex w-full mb-56 justify-center ">
       <div className="flex flex-col w-full pt-32  items-center">
         <div className="font-pretendard font-bold text-3xl sm:text-4xl text-center">
           <div className="text-[#fccc00]">One Name,</div>
