@@ -67,7 +67,7 @@ export default function DomainsList() {
   ];
 
   return (
-    <div className="   items-center justify-center mx-4 lg:mx-56 sm:min-w-max">
+    <div className="   items-center justify-center mx-4 mb-80 lg:mx-56 sm:min-w-max">
       <div className="   justify-between flex items-center my-6 mx-2 sm:my-12">
         <div className="   text-[28px] gap-2 items-center ">
           <div className=" flex">
@@ -154,11 +154,11 @@ export default function DomainsList() {
         </div>
       </div>
       <div className="   flex items-center justify-center  ">
-        <div className="   gap-8 border-b-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full sm:min-w-max">
+        <div className="   gap-8  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full sm:min-w-max">
           {TestData.map((test, index) => (
             <div
               key={index}
-              className="   flex justify-center border border-gray-500  shadow-lg w-full rounded-3xl"
+              className="   flex justify-center border border-gray-200  shadow-lg w-full rounded-3xl"
             >
               <div className="   flex flex-col ">
                 <div className="   flex gap-2 ">
