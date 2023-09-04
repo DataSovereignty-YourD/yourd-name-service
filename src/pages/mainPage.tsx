@@ -1,18 +1,12 @@
-import { useEffect } from "react";
-import { useNavigate } from "react-router-dom"
+import { useNavigate } from "react-router-dom";
+import SearchPage from "./domains/searchPage";
+import DomainsList from "./domains/domainList";
 
 export default function MainPage() {
-    const navigation = useNavigate();
-    useEffect(()=> {
-        navigation('/search');
-    },[])
-    
-
-    return (
+  return (
     <div>
-        mainPage
-        yourd name service 설명 페이지
-        먼저 search 페이지 부터 작업
+      <SearchPage />
+      <DomainsList />
     </div>
-    )
+  );
 }
