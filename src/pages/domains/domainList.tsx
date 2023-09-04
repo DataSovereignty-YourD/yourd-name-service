@@ -35,43 +35,43 @@ export default function DomainsList() {
   ];
 
   return (
-    <div className="  items-center justify-center mx-80">
-      <div className="  justify-between flex items-center mx-24 my-12">
-        <div className="  flex text-[28px] gap-8 items-center ">
-          <button className="  px-4 border-b-2 border-blue-600">All</button>
-          <button className="  text-lg px-4">DeFi</button>
-          <button className="  text-lg px-4">NFT</button>
-          <button className="  text-lg px-4">Games</button>
-          <button className="  text-lg px-4">Exchanges</button>
-          <button className="  text-lg px-4">Social</button>
-          <button className="  text-lg px-4">Other</button>
+    <div className=" items-center justify-center mx-80">
+      <div className=" justify-between flex items-center mx-24 my-12">
+        <div className=" flex text-[28px] gap-8 items-center ">
+          <button className=" px-4 border-b-2 border-blue-600">All</button>
+          <button className=" text-lg px-4">DeFi</button>
+          <button className=" text-lg px-4">NFT</button>
+          <button className=" text-lg px-4">Games</button>
+          <button className=" text-lg px-4">Exchanges</button>
+          <button className=" text-lg px-4">Social</button>
+          <button className=" text-lg px-4">Other</button>
         </div>
         <div>
           <button
-            className="   text-black  hover:bg-blue-100 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center"
+            className="  text-black  hover:bg-blue-100 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-lg px-4 py-2.5 text-center inline-flex items-center"
             type="button"
             onClick={toggleDropdown}
           >
             <img src={selectedLogo} alt="" />
             {selectedLogo}
-            <MdOutlineKeyboardArrowDown className="   ml-6" size={20} />
+            <MdOutlineKeyboardArrowDown className="  ml-6" size={20} />
           </button>
         </div>
 
         {isDropdown && (
           <div
-            className="   bg-white absolute text-base list-none z-50 top-40 right-[440px] justify-center flex items-center divide-gray-100 rounded shadow  min-w-max w-fit h-fit pb-4  p-2  bg-base-100"
+            className="  bg-white absolute text-base list-none z-50 top-40 right-[440px] justify-center flex items-center divide-gray-100 rounded shadow  min-w-max w-fit h-fit pb-4  p-2  bg-base-100"
             id="dropdown"
           >
-            <ul className="   py-1">
+            <ul className="  py-1">
               {logos.map((logo, index) => (
                 <li key={index}>
                   <a
                     href="#"
-                    className="   text-lg hover:bg-gray-100 text-gray-700  px-4 py-2 flex"
+                    className="  text-lg hover:bg-gray-100 text-gray-700  px-4 py-2 flex"
                     onClick={() => handleLogoSelect(logo.name)}
                   >
-                    <img src={logo.icon} alt="" className="   w-5 h-5 mr-2" />
+                    <img src={logo.icon} alt="" className="  w-5 h-5 mr-2" />
                     {logo.name}
                   </a>
                 </li>
@@ -80,50 +80,50 @@ export default function DomainsList() {
           </div>
         )}
       </div>
-      <div className="  flex items-center justify-center p-4 ">
-        <div className="  gap-8 border-b-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mx-20">
+      <div className=" flex items-center justify-center  ">
+        <div className=" gap-8 border-b-2 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mx-20">
           {TestData.map((test, index) => (
             <div
               key={index}
-              className="   flex justify-center border border-gray-500  shadow-lg w-full  rounded-3xl"
+              className="  flex justify-center border border-gray-500  shadow-lg w-full rounded-3xl"
             >
-              <div className="  flex flex-col ">
-                <div className="  flex gap-2 mt-4 mr-3 ml-3 ">
+              <div className=" flex flex-col ">
+                <div className=" flex gap-2 ">
                   <img
                     src={test.logo}
-                    className="  object-contain  rounded-md w-[100px] my-6"
+                    className=" object-contain  rounded-md w-[100px] my-3"
                     alt=""
                   />
 
-                  <div className="  flex flex-col my-auto text-md">
-                    <div className="  flex text-lg font-semibold mb-1 mt-4">
+                  <div className=" flex flex-col my-auto text-md ">
+                    <div className=" flex text-lg font-semibold mb-1 ">
                       {test.name}
                     </div>
 
-                    <div className="   flex text-md text-gray-500 gap-1 text-md">
-                      <div className="   border border-gray-400 rounded-xl py-1 px-1">
+                    <div className="  flex text-xs text-gray-800 gap-1 text-md">
+                      <div className="  border border-gray-600 rounded-md py-1 px-1">
                         {test.category[0]}
                       </div>
-                      <div className="   border border-gray-400 rounded-xl py-1 px-1">
+                      <div className="  border border-gray-600 rounded-md py-1 px-1">
                         {test.category[1]}
                       </div>
-                      <div className="   border border-gray-400 rounded-xl py-1 px-1">
+                      <div className="  border border-gray-600 rounded-md py-1 px-1">
                         {test.category[2]}
                       </div>
-                      <div className="   border border-gray-400 rounded-xl py-1 px-1">
+                      <div className="  border border-gray-600 rounded-md py-1 px-1">
                         {test.category[3]}
                       </div>
                     </div>
-                    <div className="   text-lg text-gray-500  mt-2 w-full truncate">
+                    <div className="  text-sm text-gray-500  mt-1 w-full truncate ">
                       {test.description}
                     </div>
                   </div>
                 </div>
-                <div className="   flex items-center justify-between mx-2 gap-4 text-lg mb-4">
-                  <div className="   border border-gray-300 items-center justify-center flex rounded-3xl font-bold py-5 w-full">
+                <div className="  flex items-center justify-between mx-4 gap-4 text-md mb-4">
+                  <div className="  border border-gray-300 items-center justify-center flex rounded-3xl font-bold py-1 w-full">
                     view details
                   </div>
-                  <div className="   border border-gray-300 items-center justify-center flex rounded-3xl text-blue-600 font-bold py-5 w-full">
+                  <div className="  border border-gray-300 items-center justify-center flex rounded-3xl text-blue-600 font-bold py-1 w-full">
                     open
                   </div>
                 </div>
