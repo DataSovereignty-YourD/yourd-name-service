@@ -27,7 +27,7 @@ function App() {
         <Route path='/domains' element={<DomainsList/>}/>
 
         {/** 특정 도메인 정보 페이지  */}
-        <Route path='/domains/:name' element={<DomainDetail/>}/>
+        <Route path='/domains/detail' element={<DomainDetail/>}/>
       
       </Routes>
     </div>
