@@ -7,6 +7,7 @@ import DomainDetail from './pages/domains/detail';
 import MyPage from './pages/profile/myPage';
 import TopBar from './pages/topbar';
 
+
 function App() {
 
   return (
@@ -27,6 +28,7 @@ function App() {
 
         {/** 특정 도메인 정보 페이지  */}
         <Route path='/domains/:name' element={<DomainDetail/>}/>
+      
       </Routes>
     </div>
   );
