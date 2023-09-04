@@ -45,10 +45,11 @@ export default function DomainDetail() {
   ];
 
   return (
-    <div className="flex flex-col h-screen items-center">
-      <div className="pr-96">
+    
+    <div className="flex flex-col w-1/2 mx-auto h-screen items-center">
+      <div className="mx-auto w-full ">
         <nav className="text-black p-4 font-bold pl-0">
-          <ul className="flex justify-between space-x-4 mr-28">
+          <ul className="flex space-x-4 mr-28">
             {menuItems.map((item) => (
               <li key={item.key}>
                 <button
