@@ -71,12 +71,21 @@ export default function Profile() {
         </div>
         <div className=" absolute mt-4 ml-5">
           <div className=" w-28 h-28 bg-white rounded-full border shadow-lg">
-            <img src={Logo} className=" h-full w-full rounded-full object-contain" />
+            <img
+              src={Logo}
+              className=" h-full w-full rounded-full object-contain"
+            />
           </div>
         </div>
-        <div className=" flex mt-20 mx-6">
-        <div className=" font-bold text-2xl text-black">DNS&nbsp;:&nbsp; KlaySwap</div>
+        <div className=" flex mt-20 mx-6 ">
+          <div className=" font-bold text-2xl text-black">
+            DNS&nbsp;:&nbsp; KlaySwap
+          </div>
           <img src={verify} className=" h-7 w-7" />
+
+          <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+            Subscribe
+          </button>
         </div>
       </div>
       <div className=" flex w-full flex-col items-center justify-center ">
@@ -126,7 +135,7 @@ export default function Profile() {
           </div>
         </div>
         <div className=" w-full h-[240px] bg-white rounded-lg shadow-lg mt-4 mb-6">
-          <div className=" px-6 flex space-x-6 py-4">
+          <div className="flex mx-6 justify-between py-4">
             {images.map((image, index) => (
               <div
                 key={index}

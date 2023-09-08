@@ -2,9 +2,10 @@
 import { Link } from 'react-router-dom';
 import Logo from '../assets/img/yourd-logo.png';
 import {AiOutlineMore} from 'react-icons/ai';
+import {useState} from 'react';
 export default function TopBar() {
     return (
-        <div className="fixed flex h-16 w-full bg-white top-0 items-center justify-between px-8  sm:px-20 drop-shadow-md">
+        <div className="fixed flex h-16 w-full bg-white top-0 items-center justify-between px-8 z-50 sm:px-20 drop-shadow-md">
             <Link to={"/"} className="flex w-fit h-full items-center">
                 <img src={Logo} className="h-12 sm:h-full object-contain "/>
             </Link>
